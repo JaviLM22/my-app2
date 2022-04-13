@@ -1,20 +1,16 @@
 import React from 'react'
-import {Link, Outlet} from 'react-router-dom'
+import {Outlet} from 'react-router-dom'
+import Header from './Header'
+import Footer from './Footer'
 
 export default function Home() {
   return (
     <div className="d-flex flex-column container fullscreen">
-        <header>
-            <ul>
-                <li><Link to="/clientes">Clientes</Link></li>
-                <li><Link to="/productos">Productos</Link></li>
-                <li><Link to="/facturas">Facturas</Link></li>
-            </ul>
-        </header>
+        <Header></Header>
         <main className="flex-grow-1">
             <Outlet />
         </main>
-        <footer>Pie</footer>
+        <Footer></Footer>
     </div>
   )
 }
