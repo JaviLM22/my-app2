@@ -4,10 +4,10 @@ import {Link} from 'react-router-dom'
 export default function Header() {
   return (
     <header>
-            <ul>
-                <li><Link to="/clientes">Clientes</Link></li>
-                <li><Link to="/productos">Productos</Link></li>
-                <li><Link to="/facturas">Facturas</Link></li>
+            <ul class="list-group list-group-horizontal">
+                <li class="list-group-item"><Link to="/clientes">Clientes</Link></li>
+                <li class="list-group-item"><Link to="/productos">Productos</Link></li>
+                <li class="list-group-item"><Link to="/facturas">Facturas</Link></li>
             </ul>
         </header>
   )
