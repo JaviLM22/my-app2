@@ -1,11 +1,17 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
 import './index.css'
-import App from './App'
+import {BrowserRouter, Route, Routes} from "react-router-dom"
 
 ReactDOM.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>,
+<BrowserRouter>
+  <Routes>
+    <Route path="/" element={ <Home></Home>}>
+    <Route path="/facturas" element={ <Facturas></Facturas>}>
+    <Route path="/productos" element={ <Clientes></Clientes>}>
+    <Route path="/clientes" element={ <Productos></Productos>}>
+    </Route>
+  </Routes>
+</BrowserRouter>,
   document.getElementById('root')
 )
